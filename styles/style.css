@@ -1,0 +1,67 @@
+  
+
+.wdxl-lubrifont-tc-regular {
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  html {
+    /* px means "pixels". The base font size is now 10 pixels high */
+    font-size: 10px;
+    /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
+    font-family: "WDXL Lubrifont TC", sans-serif;
+
+    background-color: #c09ad3;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  p,
+  li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+  p {
+    width: 500px;
+  }
+
+  a {
+    color: rgb(7, 20, 51);
+  }
+  
+  body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #c5eef1;
+    padding: 0 20px 20px 20px;
+    border: 20px ridge rgb(0, 225, 255);
+  }
+
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #c09ad3;
+    text-shadow: 4px 4px 0px rgb(13, 45, 57);
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    border: 2px dashed black;
+    
+  }
+
+  .done {
+    color: darkseagreen;
+    text-decoration: line-through solid black 2px;
+  }
+  
+  
+  
