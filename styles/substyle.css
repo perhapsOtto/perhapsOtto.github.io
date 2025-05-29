@@ -1,0 +1,59 @@
+.wdxl-lubrifont-tc-regular {
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  html {
+    /* px means "pixels". The base font size is now 10 pixels high */
+    font-size: 10px;
+    /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
+    font-family: "WDXL Lubrifont TC", sans-serif;
+
+    background-color: #c09ad3;
+
+    z-index: -3;
+  }
+
+  .overlap {
+    order: 1px solid #000;
+  }
+  
+  .under {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    width: auto;
+    border: 1px solid #f00;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .over {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    border: 0px solid #0f0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
+  body, html {
+    height: 100%;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url("../images/me.jpeg");
+  
+    /* Set a specific height */
+    min-height: 50%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
