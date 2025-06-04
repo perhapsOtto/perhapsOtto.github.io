@@ -1,0 +1,71 @@
+#head{
+    width: 100vw;
+    position: fixed;  
+    z-index: 10;
+    /*background-color: rgba(255, 255, 255, 0.432);*/
+}
+
+#head a {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.projects {
+    bottom: -130px;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.project{
+    float: left;
+    padding: 0 4.7vw 2vw 4.7vw;
+    min-height: max(calc(22vw + 3em), 300px);
+}
+
+.proj-img {
+    width: 20vw;
+    min-width: 200px;
+}
+
+.box {
+    position: relative;
+    width: 20vw;
+    min-width: 200px;
+    min-height: 22vw;
+}
+
+.projects div p {
+    text-align: left;
+    font-size: 30px;
+    position: relative;
+    width: 20vw;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.box p {
+    position: absolute;
+    top: max(21vw, 210px);
+    text-shadow: 2px 2px 0px white;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+}
+
+.splotch {
+    transition: all 700ms ease-in-out;
+    width: 20vw;
+    min-width: 200px;
+    /*top: min(-7.5vw, -75px);
+    left: min(-7.5vw, -75px);*/
+    z-index: -1;
+    opacity: 100%;
+    
+}
+

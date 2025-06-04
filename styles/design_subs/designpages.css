@@ -1,0 +1,32 @@
+.layout {
+    margin: 0 auto;
+    width: 90%;
+    min-height: 37vw;
+}
+
+.main-img {
+    float:none;
+    width: 30vw;
+    padding: 0;
+    
+}
+
+.text {
+    font-size: 20px;
+    text-align: left;
+}
+
+.imgtext {
+    float: left;
+    padding: 0 5vw 5vw 0;
+    height: max(30vw, 200px);
+}
+
+.und-text {
+    margin:0;
+    font-size: 20px;
+}
+
+.sub-img {
+    width: 20vw;
+}

@@ -1,51 +1,51 @@
 <!doctype html>
 <html lang="en-US">
-  <head>
+
+<head>
     <link href="styles/style.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+    <title>Home</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
-
-    <script async src="scripts/main.js"></script>
-  </head>
-
-  <header>
-    <nav class="navigation-bar">
-      <img class="logo" src="logo.png" alt="Otto Allard">
-      <a href="parallax/index.html">Home</a>
-      <a href="testpage/index.html">Music</a>
-      <a href="#">Design</a>
-      <a href="#">Coding</a>
-      <a href="#">Games</a>
-  </nav>
-  
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lilita+One&family=Playwrite+HU:wght@100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tiny5&family=Urbanist:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
     
-  </header>
+    <script async src="scripts/nav.js"></script>
+    <script async src="scripts/logo.js"></script>
+</head>
 
-  <body>
-    <h1>test website!</h1>
 
-    <img class="photo" src="images/me.jpeg" alt="a photo of me!" />
-    
-    <p><a href="https://www.ottoallard.com"> here's</a> a link to my current website! </p>
 
-    
+<body>
+    <div class="parallax">
+        <!--layer 1 will be the bottom layer, layer 3 will be the top layer-->
 
-    <p>Some text so I can practice paragraphs! I'm gonna write a bunch to see if it returns correctly.............. hmmm is it? i guess we'll see</p>
-    <p>here's a list!</p>
-
-    <ol>
-        <li>some items</li>
-        <li>some more items</li>
-        <li>even more?!</li>
-    </ol>
-
-    <button>Change user</button>
-
-  </body>
+        <div class="parallax-layer layer3"><img class="under" src="images/me.jpeg"></div>
+        <div class="parallax-layer layer2"><img class="over" src="images/overlay.png"></div>
+        <div class="parallax-layer layer1"><header>
+            <nav class="navigation-bar">
+              <a href="#" class="logo"><img class="logo" class="logoimg" id="logo" src="images/otto-logo-static.png" alt="Otto Allard"></a>
+              
+              <a href="#" id="home">HOME</a>
+              <a href="testpage/index.html" id="music">MUSIC</a>
+              <a href="design/index.html" id="design">DESIGN</a>
+              <a href="#" id="code">CODING</a>
+              <a href="#" id="game">GAMES</a>
+          </nav>
+          </header></div>
+        <div class="parallax-layer layer4">
+            <h1>about:</h1>
+            <p>Otto Allard is a mandolin and guitar player based in Chicago Illinois. He is currently studying jazz performance with <a href="https://www.oberlin.edu/bobby-ferrazza">Bobby Ferrazza</a> at Oberlin Conservatory. He has also studied with <a href="https://www.jacobjolliff.com/">Jacob Jolliff</a>, <a href="https://donstiernberg.com/">Don Stiernberg,</a> and <a href="https://jonasfriddle.com/">Jonas Friddle.</a></p>
+              
+            <p>Otto plays in a duo with his brother <a href="https://ottoallard.com/max-otto">Max Allard</a>. Otto is featured on several of Max’s <a href="https://maxallard.com/listen">recordings</a>, including March Maxness, Rooster, and Soleil. Otto and Max were among a stellar lineup of musicians on Warren Leming's project, "A Rich Man's War and a Poor Man's Fight: Songs and Tunes Inspired by the American Civil War.” The physical CD of this project includes a 24 page booklet of history, essays, lyrics and graphics, which Otto designed. Find more of Otto’s design work here.</p>
+                
+                
+            <p>Otto plays a <a href="http://www.vintagebydesign.com/media.html">Wienman F-5A mandolin</a> and a Denny Kopp custom mini-guitar electric mandolin.
+                </p>
+        
+        </div>
+    </div>
+</body>
 
 </html>
