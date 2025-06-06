@@ -70,6 +70,10 @@
   body {
     margin: 0;
   }
+
+  #head {
+    height: 100px;
+  }
   
   .code-alt{
     font-family: "Source Code Pro", monospace;

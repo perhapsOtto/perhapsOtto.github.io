@@ -1,0 +1,160 @@
+@property --gradColor1{
+    syntax: "<color>";
+    initial-value: #554fa1;
+    inherits: false;
+}
+
+@property --gradColor2{
+    syntax: "<color>";
+    initial-value: #cd99c5;
+    inherits: false;
+}
+
+html{
+    transition: --gradColor1 3s, --gradColor2 3s;
+    height: 100vh;
+    background-attachment: fixed;
+    background-color: #a79f94;
+}
+
+button {
+    background-image: linear-gradient(120deg, var(--gradColor1), var(--gradColor2));
+    animation: anim-c infinite linear 10s;
+    width: 100px;
+    height: 100px;
+
+}
+
+@keyframes anim-c {
+    0% { 
+        --gradColor1:#554fa1;
+        --gradColor2: #cd99c5;
+    }
+    33% { 
+        --gradColor1:#cd99c5;
+        --gradColor2: #d6a269;
+    }
+    66% { 
+        --gradColor1:#d6a269;
+        --gradColor2: #554fa1;
+    }
+    100% { 
+        --gradColor1:#554fa1;
+        --gradColor2: #cd99c5;
+    }
+}
+
+@property --sidebar-w {
+    syntax: "<length>";
+    initial-value: 250px;
+    inherits: false;
+}
+
+@property --image-w {
+    syntax: "<length>";
+    initial-value: 25vw;
+    inherits: false;
+}
+
+.layout {
+    /*margin: 0 auto;*/
+    margin-left: var(--sidebar-w);
+    width: calc(90% - var(--sidebar-w));
+    min-height: 37vw;
+    padding: 0 30px;
+}
+
+#stack {
+    float:left;  
+    width: 100%;
+    padding: 0;  
+}
+
+.above-text {
+    float:left;
+    width: var(--image-w);
+    padding: 0;    
+}
+
+.main-img {
+    float:left;
+    width: var(--image-w);
+    padding: 0 2vw 2vw 0;    
+}
+
+.text {
+    font-size: 20px;
+    text-align: left;
+    min-height: 35vw;
+    
+}
+
+.und-text {
+    margin:0;
+    font-size: 20px;
+}
+
+.side-nav {
+    height: 100%;
+    width: var(--sidebar-w);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    outline: 5px solid black;
+
+}
+
+#logo {
+    width: 60%;
+}
+
+.side-nav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+
+div{
+    outline: 0px dashed cyan;
+}
+
+#shows{
+    margin-top: 30px;
+    float: right;
+    background-color: white;
+    outline: 5px solid black;
+    width: 40%;
+}
+
+#shows img {
+    width: 90%;
+    padding: 10px;
+}
+
+#shows p {
+    font-size: 20px;
+}
+
+iframe {
+    margin-top: 25px;
+    width: 35.5vw;
+    height: 20vw;
+    float: left;
+}
+
+#extra {
+    align-content: flex-start;
+}
+
+#logo{
+    content:url("../images/otto-logo-static.png");
+}
+
+#logo:hover{
+    content:url("../images/otto_logo.gif");
+}
